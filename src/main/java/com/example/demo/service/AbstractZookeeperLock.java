@@ -34,7 +34,7 @@ public abstract class AbstractZookeeperLock implements Lock {
      */
     @Override
     public void unLock() {
-      //  System.out.println("#####删除节点#####");
+        System.out.println("#####删除节点#####");
         client.delete(PATH);
     }
 
